@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Harsh Pratap Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +19,7 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .header {
             text-align: center;
@@ -25,6 +27,7 @@
         .header h1 {
             margin: 0;
             color: #4CAF50;
+            font-size: 2rem;
         }
         .header p {
             margin: 5px 0;
@@ -36,6 +39,7 @@
             color: #4CAF50;
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
+            display: inline-block;
         }
         ul {
             list-style-type: none;
@@ -43,6 +47,15 @@
         }
         ul li {
             margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        ul li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #4CAF50;
+            margin-right: 10px;
         }
         .contact a {
             text-decoration: none;
@@ -55,6 +68,14 @@
             padding: 5px 10px;
             margin: 5px;
             border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .skills span:hover {
+            background: #c8e6c9;
+        }
+        .icon {
+            margin-right: 10px;
+            color: #4CAF50;
         }
     </style>
 </head>
@@ -62,19 +83,19 @@
     <div class="container">
         <div class="header">
             <h1>Harsh Pratap Singh</h1>
-            <p>Junior Web Developer</p>
-            <p>Pratapgarh, Uttar Pradesh | Jaipur, Rajasthan</p>
-            <p>📞 +91 7388241419 | 📧 <a href="mailto:sainythakur@gmail.com">sainythakur@gmail.com</a></p>
-            <p>🌐 <a href="https://sainy98.github.io/portfolio">sainy98.github.io/portfolio</a></p>
+            <p><i class="fas fa-user icon"></i>Junior Web Developer</p>
+            <p><i class="fas fa-map-marker-alt icon"></i>Pratapgarh, Uttar Pradesh | Jaipur, Rajasthan</p>
+            <p><i class="fas fa-phone icon"></i>📞 +91 7388241419 | <i class="fas fa-envelope icon"></i>📧 <a href="mailto:sainythakur@gmail.com">sainythakur@gmail.com</a></p>
+            <p><i class="fas fa-globe icon"></i>🌐 <a href="https://sainy98.github.io/portfolio">sainy98.github.io/portfolio</a></p>
         </div>
 
         <div class="section">
-            <h2>Profile</h2>
+            <h2><i class="fas fa-user-circle icon"></i>Profile</h2>
             <p>As a BCA student, I bring a solid foundation in HTML, CSS, and JavaScript, along with hands-on experience in React and Node.js. My academic projects have honed my skills in creating responsive and user-friendly interfaces, and I am eager to apply my knowledge to real-world challenges. With a proactive approach to learning and a strong dedication to teamwork and problem-solving, I am motivated to contribute effectively to innovative projects in web development.</p>
         </div>
 
         <div class="section">
-            <h2>Technical Skills</h2>
+            <h2><i class="fas fa-code icon"></i>Technical Skills</h2>
             <div class="skills">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -90,7 +111,7 @@
         </div>
 
         <div class="section">
-            <h2>Education</h2>
+            <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
             <ul>
                 <li><strong>Bachelor of Computer Applications (BCA)</strong> - Manipal University Jaipur (2023-2025)</li>
                 <li><strong>Higher Secondary</strong> - Sanskar Global School (2022-2023)</li>
@@ -99,7 +120,7 @@
         </div>
 
         <div class="section">
-            <h2>Projects</h2>
+            <h2><i class="fas fa-tasks icon"></i>Projects</h2>
             <ul>
                 <li>YouTube video downloader website using Python (Flask)</li>
                 <li>University Result website with Admin Features using Node.js and MySQL</li>
@@ -112,7 +133,7 @@
         </div>
 
         <div class="section">
-            <h2>Certifications</h2>
+            <h2><i class="fas fa-certificate icon"></i>Certifications</h2>
             <ul>
                 <li>HTML and CSS in depth</li>
                 <li>Web Development in JavaScript</li>
@@ -124,7 +145,7 @@
         </div>
 
         <div class="section">
-            <h2>Soft Skills</h2>
+            <h2><i class="fas fa-comments icon"></i>Soft Skills</h2>
             <ul>
                 <li>Critical Thinking</li>
                 <li>Creative Mindset</li>
